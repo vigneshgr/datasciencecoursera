@@ -1,0 +1,14 @@
+dupbdayprob<- function (n)
+{
+	num <- vector("numeric", length = 1)
+	num <- n
+	b <- 1
+	for (i in 1:n)
+	{
+		b <- b * (365-i+1)
+		
+	}
+	prob <- b / (365 ^ n)
+	print(n)
+	print(prob)
+}
